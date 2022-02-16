@@ -4,8 +4,15 @@ document.getElementById('btn1').addEventListener('click', function () {
     const remaingBalance = document.getElementById('remain');
     const balanceRemain = myRemaingBalance();
     const mySpend = mySpendingAmount();
-    expenses.innerText = mySpend;
-    remaingBalance.innerText = balanceRemain;
+    if (mySpend < myTotalIncome()) {
+        expenses.innerText = mySpend;
+        remaingBalance.innerText = balanceRemain;
+    }
+    else {
+        expenses.innerText = 0;
+        remaingBalance.innerText = myTotalIncome();
+    }
+
 
 });
 //savings button working
