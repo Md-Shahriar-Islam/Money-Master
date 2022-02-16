@@ -1,3 +1,4 @@
+//calculate button working
 document.getElementById('btn1').addEventListener('click', function () {
     const expenses = document.getElementById('totalExpenses');
     const remaingBalance = document.getElementById('remain');
@@ -7,6 +8,7 @@ document.getElementById('btn1').addEventListener('click', function () {
     remaingBalance.innerText = balanceRemain;
 
 });
+//savings button working
 document.getElementById('btn2').addEventListener('click', function () {
     let savedAmount = document.getElementById('saved');
     let remaining = document.getElementById('leftAmount');
